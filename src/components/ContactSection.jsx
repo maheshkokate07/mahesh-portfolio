@@ -162,7 +162,9 @@ export default function ContactSection() {
                   </div>
                 ) : (
                   <form
-                    onSubmit={handleSubmit}
+                    // onSubmit={handleSubmit}
+                    action="https://formsubmit.co/kokatemahesh2004@gmail.com"
+                    method="POST"
                     className="space-y-6"
                   >
                     <div>
