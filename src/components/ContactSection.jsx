@@ -18,7 +18,7 @@ export default function ContactSection() {
     setIsSubmitting(true)
 
     try {
-      const response = await fetch("https://formsubmit.co/ajax/kokatemahesh2004@gmail.com", {
+      const response = await fetch("https://formsubmit.co/ajax/2fe30202d5e806489d119ab7087c9912", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -162,9 +162,7 @@ export default function ContactSection() {
                   </div>
                 ) : (
                   <form
-                    // onSubmit={handleSubmit}
-                    action="https://formsubmit.co/kokatemahesh2004@gmail.com"
-                    method="POST"
+                    onSubmit={handleSubmit}
                     className="space-y-6"
                   >
                     <div>
