@@ -1,6 +1,7 @@
 import { useState } from "react"
-import { Mail, Phone, MapPin, Linkedin, Github, Send, MessageCircle, User, AtSign } from "lucide-react"
+import { Mail, Phone, Code, Linkedin, Github, Send, MessageCircle, User, AtSign } from "lucide-react"
 import { useIntersectionObserver } from "../hooks/useIntersectionObserver"
+import { SiLeetcode } from "react-icons/si";
 
 export default function ContactSection() {
   const [ref, hasIntersected] = useIntersectionObserver()
@@ -68,23 +69,23 @@ export default function ContactSection() {
       bgColor: "bg-green-100 dark:bg-green-900",
     },
     {
-      icon: MapPin,
-      text: "Pune, Maharashtra",
-      href: null,
+      icon: Code,
+      text: "leetcode.com/u/8w0fd9J4mw",
+      href: "https://leetcode.com/u/8w0fd9J4mw/",
       color: "text-blue-500",
       bgColor: "bg-blue-100 dark:bg-blue-900",
     },
     {
       icon: Linkedin,
       text: "linkedin.com/in/maheshkokate07",
-      href: "https://linkedin.com/in/maheshkokate07",
+      href: "https://linkedin.com/in/maheshkokate",
       color: "text-blue-600",
       bgColor: "bg-blue-100 dark:bg-blue-900",
     },
     {
       icon: Github,
       text: "github.com/maheshkokate",
-      href: "https://github.com/maheshkokate",
+      href: "https://github.com/maheshkokate07",
       color: "text-gray-800 dark:text-gray-200",
       bgColor: "bg-gray-100 dark:bg-gray-800",
     },

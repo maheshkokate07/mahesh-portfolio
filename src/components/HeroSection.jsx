@@ -21,13 +21,13 @@ export default function HeroSection({ scrollToSection }) {
       color: "hover:text-red-500 dark:hover:text-red-500 transition",
     },
     {
-      href: "https://linkedin.com/in/maheshkokate07",
+      href: "https://linkedin.com/in/maheshkokate",
       icon: Linkedin,
       label: "LinkedIn",
       color: "hover:text-blue-600 dark:hover:text-blue-600 transition",
     },
     {
-      href: "https://github.com/maheshkokate",
+      href: "https://github.com/maheshkokate07",
       icon: Github,
       label: "GitHub",
       color: "hover:text-gray-800 dark:hover:text-black transition",
