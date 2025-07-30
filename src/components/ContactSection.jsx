@@ -77,14 +77,14 @@ export default function ContactSection() {
     },
     {
       icon: Linkedin,
-      text: "linkedin.com/in/maheshkokate07",
+      text: "linkedin.com/in/maheshkokate",
       href: "https://linkedin.com/in/maheshkokate",
       color: "text-blue-600",
       bgColor: "bg-blue-100 dark:bg-blue-900",
     },
     {
       icon: Github,
-      text: "github.com/maheshkokate",
+      text: "github.com/maheshkokate07",
       href: "https://github.com/maheshkokate07",
       color: "text-gray-800 dark:text-gray-200",
       bgColor: "bg-gray-100 dark:bg-gray-800",
