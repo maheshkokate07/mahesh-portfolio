@@ -9,7 +9,7 @@ export default function ExperienceSection() {
       type: "work",
       title: "Associate Software Developer",
       organization: "Tekhnologia Innovations India Pvt. Ltd.",
-      duration: "Jan 2025 - Present",
+      duration: "Aug 2024 - Present",
       location: "Pune, Maharashtra",
       description: [
         "Built responsive UIs using React.js with TypeScript, Redux Toolkit, and Context API",
