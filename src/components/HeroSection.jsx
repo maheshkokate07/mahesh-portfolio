@@ -49,12 +49,12 @@ export default function HeroSection({ scrollToSection }) {
           </h1>
 
           <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 dark:text-gray-300 mb-4 sm:mb-6 px-4">
-            Associate Software Developer |{" "}
+            Software Engineer |{" "}
             <span className="text-blue-600 dark:text-blue-400 font-semibold">MERN + TypeScript</span>
           </h2>
 
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 dark:text-gray-300 mb-6 sm:mb-8 max-w-2xl mx-auto px-4 leading-relaxed">
-            Passionate full-stack developer specializing in scalable web applications with modern technologies. Building
+            Passionate full-stack engineer specializing in scalable web applications with modern technologies. Building
             efficient, user-centric solutions with React, Node.js, and cloud technologies.
           </p>
 

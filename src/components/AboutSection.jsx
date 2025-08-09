@@ -26,9 +26,7 @@ export default function AboutSection() {
               className={`lg:col-span-2 space-y-4 sm:space-y-6 section-enter-up ${hasIntersected ? "visible" : ""}`}
             >
               <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                I'm a passionate Associate Software Developer with expertise in the MERN stack and TypeScript. Currently
-                working at Tekhnologia Innovations India Pvt. Ltd., I specialize in building scalable web applications
-                with modern technologies.
+                I’m a passionate Software Engineer specializing in the MERN stack and TypeScript, with a focus on building scalable, high-performance web applications using modern technologies.
               </p>
 
               <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
