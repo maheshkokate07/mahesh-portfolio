@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useCallback } from "react"
 import Navigation from "./components/Navigation"
 import HeroSection from "./components/HeroSection"
 import AboutSection from "./components/AboutSection"
@@ -20,13 +20,13 @@ function App() {
     }
   }, [darkMode])
 
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId)
+  const scrollToSection = useCallback((sectionId) => {
+    const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
-      setActiveSection(sectionId)
+      element.scrollIntoView({ behavior: "smooth" });
+      setActiveSection(sectionId);
     }
-  }
+  }, [setActiveSection]);
 
   return (
     <div className="min-h-screen transition-colors duration-300 overflow-x-hidden">

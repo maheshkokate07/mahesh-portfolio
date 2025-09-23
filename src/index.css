@@ -156,3 +156,21 @@ html {
 .dark .hover-lift:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
+
+.blink {
+  animation: blink 2000ms infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}

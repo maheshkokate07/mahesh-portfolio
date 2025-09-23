@@ -1,23 +1,24 @@
 import { Mail, Linkedin, Github } from "lucide-react"
 
+const socialLinks = [
+  {
+    href: "mailto:kokatemahesh2004@gmail.com",
+    icon: Mail,
+    label: "Email",
+  },
+  {
+    href: "https://linkedin.com/in/maheshkokate07",
+    icon: Linkedin,
+    label: "LinkedIn",
+  },
+  {
+    href: "https://github.com/maheshkokate",
+    icon: Github,
+    label: "GitHub",
+  },
+]
+
 export default function SocialLinks() {
-  const socialLinks = [
-    {
-      href: "mailto:kokatemahesh2004@gmail.com",
-      icon: Mail,
-      label: "Email",
-    },
-    {
-      href: "https://linkedin.com/in/maheshkokate07",
-      icon: Linkedin,
-      label: "LinkedIn",
-    },
-    {
-      href: "https://github.com/maheshkokate",
-      icon: Github,
-      label: "GitHub",
-    },
-  ]
 
   return (
     <div className="flex justify-center items-center space-x-4 sm:space-x-6 mt-6 sm:mt-8">

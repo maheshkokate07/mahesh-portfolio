@@ -1,18 +1,18 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useCallback } from "react"
 import { Moon, Sun, Menu, X } from "lucide-react"
+
+const navItems = [
+  { id: "hero", label: "Home" },
+  { id: "about", label: "About" },
+  { id: "skills", label: "Skills" },
+  { id: "projects", label: "Projects" },
+  { id: "experience", label: "Experience" },
+  { id: "contact", label: "Contact" },
+]
 
 export default function Navigation({ darkMode, setDarkMode, activeSection, scrollToSection }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
-
-  const navItems = [
-    { id: "hero", label: "Home" },
-    { id: "about", label: "About" },
-    { id: "skills", label: "Skills" },
-    { id: "projects", label: "Projects" },
-    { id: "experience", label: "Experience" },
-    { id: "contact", label: "Contact" },
-  ]
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,10 +22,10 @@ export default function Navigation({ darkMode, setDarkMode, activeSection, scrol
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  const handleNavClick = (section) => {
-    scrollToSection(section)
-    setMobileMenuOpen(false)
-  }
+  const handleNavClick = useCallback((section) => {
+    scrollToSection(section);
+    setMobileMenuOpen(false);
+  }, [scrollToSection, setMobileMenuOpen]);
 
   return (
     <nav

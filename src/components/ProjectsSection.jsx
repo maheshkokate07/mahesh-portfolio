@@ -1,59 +1,59 @@
 import { ExternalLink, Github } from "lucide-react"
 import { useIntersectionObserver } from "../hooks/useIntersectionObserver"
 
+const projectsData = [
+  {
+    name: "React Query Hands-On Series",
+    description:
+      "A series of 12 live demos demonstrating advanced React Query features for building scalable and high-performance React applications.",
+    tech: [
+      "React.js",
+      "React Query",
+      "TypeScript",
+      "Custom Hooks",
+      "Optimistic Updates",
+      "Infinite Scrolling",
+      "Pagination",
+      "Error Boundaries",
+    ],
+    features: [
+      "Implemented caching, mutations, optimistic updates, and dependent/parallel queries for efficient data fetching",
+      "Built reusable custom hooks reducing network calls by ~40% and improving UI responsiveness",
+      "Demonstrated error boundaries and production-ready patterns for scalable React apps",
+      "Provided interactive, real-world demos for developers to learn best practices",
+    ],
+    liveDemo: "https://github.com/maheshkokate07/react-query-tanstack",
+    github: "https://github.com/maheshkokate07/react-query-tanstack",
+  },
+  {
+    name: "YouTube Clone",
+    description:
+      "A full-featured YouTube-like platform with secure authentication, video upload, streaming, and real-time user interactions.",
+    tech: [
+      "React.js",
+      "Node.js",
+      "MongoDB",
+      "WebSocket",
+      "Cloudinary",
+      "Redux Toolkit",
+      "React Router",
+      "JWT",
+    ],
+    features: [
+      "Implemented secure user authentication using JWT with access/refresh tokens",
+      "Enabled video uploads and streaming using Cloudinary for scalable media hosting",
+      "Built real-time notifications and interactions with WebSocket",
+      "Developed likes, subscriptions, and comment system with Redux Toolkit",
+      "Tracked video progress and session state for seamless user experience",
+      "Protected routes and role-based access control for secure navigation",
+    ],
+    liveDemo: "https://youtube-clone-frontend-bkxd.onrender.com",
+    github: "https://github.com/maheshkokate07/youtube-clone",
+  },
+];
+
 export default function ProjectsSection() {
   const [ref, isIntersecting, hasIntersected] = useIntersectionObserver()
-
-  const projectsData = [
-    {
-      name: "React Query Hands-On Series",
-      description:
-        "A series of 12 live demos demonstrating advanced React Query features for building scalable and high-performance React applications.",
-      tech: [
-        "React.js",
-        "React Query",
-        "TypeScript",
-        "Custom Hooks",
-        "Optimistic Updates",
-        "Infinite Scrolling",
-        "Pagination",
-        "Error Boundaries",
-      ],
-      features: [
-        "Implemented caching, mutations, optimistic updates, and dependent/parallel queries for efficient data fetching",
-        "Built reusable custom hooks reducing network calls by ~40% and improving UI responsiveness",
-        "Demonstrated error boundaries and production-ready patterns for scalable React apps",
-        "Provided interactive, real-world demos for developers to learn best practices",
-      ],
-      liveDemo: "https://github.com/maheshkokate07/react-query-tanstack",
-      github: "https://github.com/maheshkokate07/react-query-tanstack",
-    },
-    {
-      name: "YouTube Clone",
-      description:
-        "A full-featured YouTube-like platform with secure authentication, video upload, streaming, and real-time user interactions.",
-      tech: [
-        "React.js",
-        "Node.js",
-        "MongoDB",
-        "WebSocket",
-        "Cloudinary",
-        "Redux Toolkit",
-        "React Router",
-        "JWT",
-      ],
-      features: [
-        "Implemented secure user authentication using JWT with access/refresh tokens",
-        "Enabled video uploads and streaming using Cloudinary for scalable media hosting",
-        "Built real-time notifications and interactions with WebSocket",
-        "Developed likes, subscriptions, and comment system with Redux Toolkit",
-        "Tracked video progress and session state for seamless user experience",
-        "Protected routes and role-based access control for secure navigation",
-      ],
-      liveDemo: "https://youtube-clone-frontend-bkxd.onrender.com",
-      github: "https://github.com/maheshkokate07/youtube-clone",
-    },
-  ];
 
   return (
     <section id="projects" className="py-16 sm:py-20 px-4 bg-gray-50 dark:bg-gray-800">

@@ -1,4 +1,4 @@
-import { Heart, Code, Coffee } from "lucide-react"
+import { Heart, Code } from "lucide-react"
 
 export default function Footer() {
   return (

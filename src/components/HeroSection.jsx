@@ -1,38 +1,54 @@
 import { Download, Mail, Github, Linkedin, ChevronDown } from "lucide-react"
 import { useIntersectionObserver } from "../hooks/useIntersectionObserver"
+import Typewriter from "./Typewriter";
+
+const techStack = [
+  "MERN Stack",
+  "JavaScript",
+  "TypeScript",
+  "React.js",
+  "Node.js",
+  "Supabase",
+  "Express.js",
+  "MongoDB",
+  "SQL",
+  "React Query",
+  "Tailwind CSS",
+  "WebSocket",
+];
+
+const socialLinks = [
+  {
+    href: "mailto:kokatemahesh2004@gmail.com",
+    icon: Mail,
+    label: "Email",
+    color: "hover:text-red-500 dark:hover:text-red-500 transition",
+  },
+  {
+    href: "https://linkedin.com/in/maheshkokate",
+    icon: Linkedin,
+    label: "LinkedIn",
+    color: "hover:text-blue-600 dark:hover:text-blue-600 transition",
+  },
+  {
+    href: "https://github.com/maheshkokate07",
+    icon: Github,
+    label: "GitHub",
+    color: "hover:text-gray-800 dark:hover:text-black transition",
+  },
+]
+
+const downloadResume = () => {
+  const link = document.createElement("a");
+  link.href = `${import.meta.env.VITE_FRONTEND_URL}/resume.pdf`;
+  link.download = "Mahesh_Kokate_Resume.pdf";
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+};
 
 export default function HeroSection({ scrollToSection }) {
-  const [ref, hasIntersected] = useIntersectionObserver()
-
-  const downloadResume = () => {
-    const link = document.createElement("a");
-    link.href = `${import.meta.env.VITE_FRONTEND_URL}/resume.pdf`;
-    link.download = "Mahesh_Kokate_Resume.pdf";
-    document.body.appendChild(link);
-    link.click();
-    link.remove();
-  };
-
-  const socialLinks = [
-    {
-      href: "mailto:kokatemahesh2004@gmail.com",
-      icon: Mail,
-      label: "Email",
-      color: "hover:text-red-500 dark:hover:text-red-500 transition",
-    },
-    {
-      href: "https://linkedin.com/in/maheshkokate",
-      icon: Linkedin,
-      label: "LinkedIn",
-      color: "hover:text-blue-600 dark:hover:text-blue-600 transition",
-    },
-    {
-      href: "https://github.com/maheshkokate07",
-      icon: Github,
-      label: "GitHub",
-      color: "hover:text-gray-800 dark:hover:text-black transition",
-    },
-  ]
+  const [ref, hasIntersected] = useIntersectionObserver();
 
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center pt-20 px-4 relative">
@@ -50,7 +66,9 @@ export default function HeroSection({ scrollToSection }) {
 
           <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 dark:text-gray-300 mb-4 sm:mb-6 px-4">
             Software Engineer |{" "}
-            <span className="text-blue-600 dark:text-blue-400 font-semibold">MERN + TypeScript</span>
+            <span className="text-blue-600 dark:text-blue-400 font-semibold">
+              <Typewriter texts={techStack} />
+            </span>
           </h2>
 
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 dark:text-gray-300 mb-6 sm:mb-8 max-w-2xl mx-auto px-4 leading-relaxed">

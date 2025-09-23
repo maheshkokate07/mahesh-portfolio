@@ -1,8 +1,8 @@
-import { User, MapPin, Phone } from "lucide-react"
+import { MapPin, Phone } from "lucide-react"
 import { useIntersectionObserver } from "../hooks/useIntersectionObserver"
 
 export default function AboutSection() {
-  const [ref, hasIntersected] = useIntersectionObserver()
+  const [ref, hasIntersected] = useIntersectionObserver();
 
   return (
     <section id="about" className="py-16 sm:py-20 px-4 bg-gray-50 dark:bg-gray-800">

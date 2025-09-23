@@ -1,74 +1,74 @@
 import { Briefcase, GraduationCap, Award, Calendar, MapPin } from "lucide-react"
-import { useIntersectionObserver } from "../hooks/useIntersectionObserver"
+import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
+
+const experienceData = [
+  {
+    type: "work",
+    title: "Software Engineer",
+    organization: "CentraLogic Consultancy Pvt. Ltd.",
+    duration: "Aug 2025 – Present",
+    location: "Pune, Maharashtra",
+    description: [
+      "Designed and developed responsive web applications using React.js, Material UI, and React Query, reducing redundant API calls by ~25%",
+      "Automated workflows and third-party integrations using n8n, improving operational efficiency by ~35%",
+      "Built and maintained backend services with Node.js and Supabase, implementing secure RBAC for user management",
+      "Integrated OpenAI APIs and real-time features with WebSockets to enhance user engagement and productivity",
+      "Collaborated with cross-functional teams to ensure scalable architecture and maintain code quality"
+    ],
+    bgColor: "bg-blue-100 dark:bg-blue-900",
+    iconColor: "text-blue-600",
+    borderColor: "border-blue-200 dark:border-blue-700",
+    icon: Briefcase,
+  },
+  {
+    type: "work",
+    title: "Associate Software Developer",
+    organization: "Tekhnologia Innovations India Pvt. Ltd.",
+    duration: "Aug 2024 – July 2025",
+    location: "Pune, Maharashtra",
+    description: [
+      "Developed responsive UIs using React.js, TypeScript, Redux Toolkit, and React Query, improving load times by ~20%",
+      "Implemented bulk image and multi-file uploads to Azure Blob Storage using SAS URLs, improving upload reliability and throughput by ~40%",
+      "Built backend microservices with Node.js, Express.js, and MongoDB, following RESTful best practices and structured error handling",
+      "Implemented secure JWT authentication with access/refresh tokens and enforced RBAC for protected routes",
+      "Integrated Redis for caching and RabbitMQ for asynchronous jobs, improving performance and system scalability"
+    ],
+    bgColor: "bg-green-100 dark:bg-green-900",
+    iconColor: "text-green-600",
+    borderColor: "border-green-200 dark:border-green-700",
+    icon: Briefcase,
+  },
+  {
+    type: "education",
+    title: "Bachelor of Science in Computer Science",
+    organization: "Ashoka Center For Business and Computer Studies, Nashik",
+    duration: "2021 - 2024",
+    location: "Nashik, Maharashtra",
+    details: "CGPA: 8.52",
+    bgColor: "bg-yellow-100 dark:bg-yellow-900",
+    iconColor: "text-yellow-600",
+    borderColor: "border-yellow-200 dark:border-yellow-700",
+    icon: GraduationCap,
+  },
+  {
+    type: "certification",
+    title: "Professional Certifications",
+    organization: "Various Platforms",
+    duration: "2023 - 2024",
+    location: "Online",
+    certifications: [
+      { name: "Full Stack Web Development", provider: "Internshala Trainings", year: "2024" },
+      { name: "Data Structures & Algorithms in Java", provider: "Apna College", year: "2023" },
+    ],
+    bgColor: "bg-purple-100 dark:bg-purple-900",
+    iconColor: "text-purple-600",
+    borderColor: "border-purple-200 dark:border-purple-700",
+    icon: Award,
+  },
+];
 
 export default function ExperienceSection() {
   const [ref, isIntersecting, hasIntersected] = useIntersectionObserver()
-
-  const experienceData = [
-    {
-      type: "work",
-      title: "Software Engineer",
-      organization: "CentraLogic Consultancy Pvt. Ltd.",
-      duration: "Aug 2025 – Present",
-      location: "Pune, Maharashtra",
-      description: [
-        "Designed and developed responsive web applications using React.js, Material UI, and React Query, reducing redundant API calls by ~25%",
-        "Automated workflows and third-party integrations using n8n, improving operational efficiency by ~35%",
-        "Built and maintained backend services with Node.js and Supabase, implementing secure RBAC for user management",
-        "Integrated OpenAI APIs and real-time features with WebSockets to enhance user engagement and productivity",
-        "Collaborated with cross-functional teams to ensure scalable architecture and maintain code quality"
-      ],
-      bgColor: "bg-blue-100 dark:bg-blue-900",
-      iconColor: "text-blue-600",
-      borderColor: "border-blue-200 dark:border-blue-700",
-      icon: Briefcase,
-    },
-    {
-      type: "work",
-      title: "Associate Software Developer",
-      organization: "Tekhnologia Innovations India Pvt. Ltd.",
-      duration: "Aug 2024 – July 2025",
-      location: "Pune, Maharashtra",
-      description: [
-        "Developed responsive UIs using React.js, TypeScript, Redux Toolkit, and React Query, improving load times by ~20%",
-        "Implemented bulk image and multi-file uploads to Azure Blob Storage using SAS URLs, improving upload reliability and throughput by ~40%",
-        "Built backend microservices with Node.js, Express.js, and MongoDB, following RESTful best practices and structured error handling",
-        "Implemented secure JWT authentication with access/refresh tokens and enforced RBAC for protected routes",
-        "Integrated Redis for caching and RabbitMQ for asynchronous jobs, improving performance and system scalability"
-      ],
-      bgColor: "bg-green-100 dark:bg-green-900",
-      iconColor: "text-green-600",
-      borderColor: "border-green-200 dark:border-green-700",
-      icon: Briefcase,
-    },
-    {
-      type: "education",
-      title: "Bachelor of Science in Computer Science",
-      organization: "Ashoka Center For Business and Computer Studies, Nashik",
-      duration: "2021 - 2024",
-      location: "Nashik, Maharashtra",
-      details: "CGPA: 8.52",
-      bgColor: "bg-yellow-100 dark:bg-yellow-900",
-      iconColor: "text-yellow-600",
-      borderColor: "border-yellow-200 dark:border-yellow-700",
-      icon: GraduationCap,
-    },
-    {
-      type: "certification",
-      title: "Professional Certifications",
-      organization: "Various Platforms",
-      duration: "2023 - 2024",
-      location: "Online",
-      certifications: [
-        { name: "Full Stack Web Development", provider: "Internshala Trainings", year: "2024" },
-        { name: "Data Structures & Algorithms in Java", provider: "Apna College", year: "2023" },
-      ],
-      bgColor: "bg-purple-100 dark:bg-purple-900",
-      iconColor: "text-purple-600",
-      borderColor: "border-purple-200 dark:border-purple-700",
-      icon: Award,
-    },
-  ];
 
   return (
     <section id="experience" className="py-16 sm:py-20 px-4">
