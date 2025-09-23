@@ -26,20 +26,17 @@ export default function AboutSection() {
               className={`lg:col-span-2 space-y-4 sm:space-y-6 section-enter-up ${hasIntersected ? "visible" : ""}`}
             >
               <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                I’m a passionate Software Engineer specializing in the MERN stack and TypeScript, with a focus on building scalable, high-performance web applications using modern technologies.
+                I’m a passionate Full-stack Software Engineer specializing in the MERN stack and TypeScript, focused on building scalable and high-performance web applications using modern technologies.
               </p>
 
               <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                My background includes developing responsive UIs with React.js, building robust backend services with
-                Node.js and Express.js, and implementing secure authentication systems. I'm experienced in microservices
-                architecture, real-time communication, and cloud deployment.
+                I have experience in developing responsive user interfaces with React.js, creating robust backend services with Node.js and Express.js, and implementing secure and efficient systems. Skilled in building real-time features, scalable architectures, and cloud-based solutions.
               </p>
 
               <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                I'm a fast learner with a strong interest in system scalability and enterprise architecture. Currently
-                open to full-time opportunities where I can contribute to innovative projects and continue growing as a
-                developer.
+                I’m a fast learner with a strong interest in system scalability and emerging technologies, always open to opportunities where I can contribute to impactful projects and continue growing as a developer.
               </p>
+
 
               <div className="flex justify-center items-center flex-row gap-3 text-sm text-gray-600 dark:text-gray-300 pt-4">
                 <div className="flex items-center bg-white dark:bg-gray-700 px-3 py-2 rounded-lg shadow-sm hover-lift">

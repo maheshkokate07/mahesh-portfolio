@@ -7,21 +7,38 @@ export default function ExperienceSection() {
   const experienceData = [
     {
       type: "work",
-      title: "Associate Software Developer",
-      organization: "Tekhnologia Innovations India Pvt. Ltd.",
-      duration: "Aug 2024 - Aug 2025",
+      title: "Software Engineer",
+      organization: "CentraLogic Consultancy Pvt. Ltd.",
+      duration: "Aug 2025 – Present",
       location: "Pune, Maharashtra",
       description: [
-        "Built responsive UIs using React.js with TypeScript, Redux Toolkit, and Context API",
-        "Improved frontend performance via lazy loading, memoization, and API caching with React Query",
-        "Developed scalable microservices using Node.js, Express.js, and MongoDB (Mongoose)",
-        "Implemented secure JWT auth with access/refresh tokens and Role Based Access",
-        "Integrated Redis for caching, session management, and rate limiting",
-        "Used RabbitMQ for async job handling and decoupled microservice communication",
+        "Designed and developed responsive web applications using React.js, Material UI, and React Query, reducing redundant API calls by ~25%",
+        "Automated workflows and third-party integrations using n8n, improving operational efficiency by ~35%",
+        "Built and maintained backend services with Node.js and Supabase, implementing secure RBAC for user management",
+        "Integrated OpenAI APIs and real-time features with WebSockets to enhance user engagement and productivity",
+        "Collaborated with cross-functional teams to ensure scalable architecture and maintain code quality"
       ],
       bgColor: "bg-blue-100 dark:bg-blue-900",
       iconColor: "text-blue-600",
       borderColor: "border-blue-200 dark:border-blue-700",
+      icon: Briefcase,
+    },
+    {
+      type: "work",
+      title: "Associate Software Developer",
+      organization: "Tekhnologia Innovations India Pvt. Ltd.",
+      duration: "Aug 2024 – July 2025",
+      location: "Pune, Maharashtra",
+      description: [
+        "Developed responsive UIs using React.js, TypeScript, Redux Toolkit, and React Query, improving load times by ~20%",
+        "Implemented bulk image and multi-file uploads to Azure Blob Storage using SAS URLs, improving upload reliability and throughput by ~40%",
+        "Built backend microservices with Node.js, Express.js, and MongoDB, following RESTful best practices and structured error handling",
+        "Implemented secure JWT authentication with access/refresh tokens and enforced RBAC for protected routes",
+        "Integrated Redis for caching and RabbitMQ for asynchronous jobs, improving performance and system scalability"
+      ],
+      bgColor: "bg-green-100 dark:bg-green-900",
+      iconColor: "text-green-600",
+      borderColor: "border-green-200 dark:border-green-700",
       icon: Briefcase,
     },
     {
@@ -31,9 +48,9 @@ export default function ExperienceSection() {
       duration: "2021 - 2024",
       location: "Nashik, Maharashtra",
       details: "CGPA: 8.52",
-      bgColor: "bg-green-100 dark:bg-green-900",
-      iconColor: "text-green-600",
-      borderColor: "border-green-200 dark:border-green-700",
+      bgColor: "bg-yellow-100 dark:bg-yellow-900",
+      iconColor: "text-yellow-600",
+      borderColor: "border-yellow-200 dark:border-yellow-700",
       icon: GraduationCap,
     },
     {
@@ -51,7 +68,7 @@ export default function ExperienceSection() {
       borderColor: "border-purple-200 dark:border-purple-700",
       icon: Award,
     },
-  ]
+  ];
 
   return (
     <section id="experience" className="py-16 sm:py-20 px-4">
@@ -105,9 +122,11 @@ export default function ExperienceSection() {
                             </div>
 
                             {item.description && (
-                              <ul className="list-disc list-inside space-y-1 sm:space-y-2 text-gray-600 dark:text-gray-300 text-sm sm:text-base">
+                              <ul className="list-disc list-outside pl-5 space-y-1 sm:space-y-2 text-gray-600 dark:text-gray-300 text-sm sm:text-base">
                                 {item.description.map((desc, itemIndex) => (
-                                  <li key={itemIndex}>{desc}</li>
+                                  <li key={itemIndex} className="text-justify">
+                                    {desc}
+                                  </li>
                                 ))}
                               </ul>
                             )}
