@@ -19,8 +19,8 @@ const contactItems = [
   },
   {
     icon: Code,
-    text: "leetcode.com/u/8w0fd9J4mw",
-    href: "https://leetcode.com/u/8w0fd9J4mw/",
+    text: "leetcode.com/u/maheshkokate07",
+    href: "https://leetcode.com/u/maheshkokate07",
     color: "text-blue-500",
     bgColor: "bg-blue-100 dark:bg-blue-900",
   },
