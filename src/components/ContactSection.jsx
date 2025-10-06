@@ -18,13 +18,6 @@ const contactItems = [
     bgColor: "bg-green-100 dark:bg-green-900",
   },
   {
-    icon: Code,
-    text: "leetcode.com/u/maheshkokate07",
-    href: "https://leetcode.com/u/maheshkokate07",
-    color: "text-blue-500",
-    bgColor: "bg-blue-100 dark:bg-blue-900",
-  },
-  {
     icon: Linkedin,
     text: "linkedin.com/in/maheshkokate",
     href: "https://linkedin.com/in/maheshkokate",
@@ -38,6 +31,13 @@ const contactItems = [
     color: "text-gray-800 dark:text-gray-200",
     bgColor: "bg-gray-100 dark:bg-gray-800",
   },
+  {
+    icon: Code,
+    text: "leetcode.com/u/maheshkokate07",
+    href: "https://leetcode.com/u/maheshkokate07",
+    color: "text-blue-500",
+    bgColor: "bg-blue-100 dark:bg-blue-900",
+  }
 ]
 
 export default function ContactSection() {
