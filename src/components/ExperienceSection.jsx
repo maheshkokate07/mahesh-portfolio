@@ -72,7 +72,7 @@ export default function ExperienceSection() {
 
   return (
     <section id="experience" className="py-16 sm:py-20 px-4">
-      <div ref={ref} className="container mx-auto max-w-4xl">
+      <div ref={ref} className="container mx-auto max-w-6xl">
         <div className={`section-enter ${hasIntersected ? "visible" : ""}`}>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12">
             <span className="text-gradient">Experience & Education</span>
